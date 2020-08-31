@@ -1,5 +1,12 @@
 package com.talentpath.amazin.api.item;
-import java.util.ArrayList;
+
+import javax.persistence.Entity;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 
 //this is the class Item. Here is where we set up the schema. This entity contains the constructors, getters, and setters.
 // for the sake of simplicity we have limited the class to only have two variables.
