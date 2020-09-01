@@ -5,7 +5,7 @@
 
 The series is an intro of how data flows from the database to the server and finally to the client. Not even full CRUD. Just a deep dive into READ/Get. 
 
-This section (Part 1) is specifically geared for the introductory learners or those that are new to Spring-Boot to understand the "*dreaded*" back-end so that it is not so overwhelming.
+This section ([Part 1](https://medium.com/@avalojc/how-data-flows-the-server-spring-boot-2ceb73009143)) is specifically geared for the introductory learners or those that are new to Spring-Boot to understand the "*dreaded*" back-end so that it is not so overwhelming.
 
 #### Part 1 
 Below I show the basics of how data is being passed and how routes work.
@@ -17,9 +17,9 @@ Below I show the basics of how data is being passed and how routes work.
 
 **Fig. 3**: This is how we are coding the data in this exercise. We are using hard coded data so that we don't have to worry about creating a database and can focus exclusively on our routes. However, in part three we will implement Postgres.
 
-Checkout part 2 to see how the client interacts with the server.
+Checkout [Part 2](https://medium.com/@avalojc/how-data-flows-the-client-react-ef14db2d4361) to see how the client interacts with the server.
 
-And part 3 puts it all together and includes a database!
+And [Part 3](https://medium.com/@avalojc/how-data-flows-putting-it-all-together-4d4571892952) puts it all together and includes a database!
 
 
 ###### I hope you find this helpful and I would love to hear your feedback.

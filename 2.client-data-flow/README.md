@@ -5,7 +5,7 @@
 
 The series is an intro of how data flows from the database to the server and finally to the client. Not even full CRUD. Just a deep dive into READ/Get. 
 
-This section (Part 2) is specifically geared for the introductory learners or those that are new to developing to understand how data flows from piece to piece
+This section ([Part 2](https://medium.com/@avalojc/how-data-flows-the-client-react-ef14db2d4361)) is specifically geared for the introductory learners or those that are new to developing to understand how data flows from piece to piece
 
 #### Part 2 
 Below I show the basics of how data is being passed and how calls work.
@@ -17,9 +17,9 @@ Below I show the basics of how data is being passed and how calls work.
 
 **Fig. 3**: This is how we are coding the data in this exercise. Just like in figure two we have three steps. We go from the ItemDataService, to the refreshItems function to set the state, to the allItems function that maps out the data for rendering. In addition the JSON in this diagram has the schema for the data. I kept it simple, just ID and data.
 
-Checkout part 1 to see how the server serves the data.
+Checkout [Part 1](https://medium.com/@avalojc/how-data-flows-the-server-spring-boot-2ceb73009143) to see how the server serves the data.
 
-And part 3 puts it all together and includes a database!
+And [Part 3](https://medium.com/@avalojc/how-data-flows-putting-it-all-together-4d4571892952) puts it all together and includes a database!
 
 
 ###### I hope you find this helpful and I would love to hear your feedback.
