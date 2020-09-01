@@ -1,68 +1,27 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# How Data Flows: The Client 
+###### Part 2 of 3
 
-## Available Scripts
+##### This repo is from my Medium series: How Data Flows 
 
-In the project directory, you can run:
+The series is an intro of how data flows from the database to the server and finally to the client. Not even full CRUD. Just a deep dive into READ/Get. 
 
-### `npm start`
+This section (Part 2) is specifically geared for the introductory learners or those that are new to developing to understand how data flows from piece to piece
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Part 2 
+Below I show the basics of how data is being passed and how calls work.
+![Data Flow Diagram](./readmeimages/HowDataFlowsClientPart2of3.png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**Fig. 1**: This is an overview of how data flows very generally. From the Database to the Server and then to the Client. Of course, in a full CRUD application, data will flow both ways as it will not only be Read, but also Created, Updated, or Deleted. However as mentioned above this is only an introductory view into the topic and we will focus on Read for now.
 
-### `npm test`
+**Fig. 2**: This is a zoom into how data flows within the Client. This is the data flow you see in this figure: from Data Service, to State, to Rendering. We will dive into how exactly it all the pieces interact over the next few sections. A few important things to note: A data service file does not need to be isolated into its own file. However, I highly recommend it as it makes it easy to use the service methods throughout your application. Another important point to make is that data may not necessarily be rendered. Sometimes it will be, sometimes it won’t. It depends on the needs of your application, but for the sake of this exercise we will be rendering it. When we get to part three we will do a few different things with the data.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Fig. 3**: This is how we are coding the data in this exercise. Just like in figure two we have three steps. We go from the ItemDataService, to the refreshItems function to set the state, to the allItems function that maps out the data for rendering. In addition the JSON in this diagram has the schema for the data. I kept it simple, just ID and data.
 
-### `npm run build`
+Checkout part 1 to see how the server serves the data.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+And part 3 puts it all together and includes a database!
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+###### I hope you find this helpful and I would love to hear your feedback.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+DM me on twitter *@avalocodes* 

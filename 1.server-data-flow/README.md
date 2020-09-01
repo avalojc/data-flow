@@ -17,9 +17,6 @@ Below I show the basics of how data is being passed and how routes work.
 
 **Fig. 3**: This is how we are coding the data in this exercise. We are using hard coded data so that we don't have to worry about creating a database and can focus exclusively on our routes. However, in part three we will implement Postgres.
 
-
-The following sections are a work in progress and will be added soon.
-
 Checkout part 2 to see how the client interacts with the server.
 
 And part 3 puts it all together and includes a database!
